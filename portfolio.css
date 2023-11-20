@@ -26,6 +26,7 @@ body{
 }
 .container{
     padding: 10px 10%;
+
 }
 nav{
     display: flex;
@@ -37,6 +38,7 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+
 }
 nav ul li a{
     color: #fff;
@@ -80,6 +82,9 @@ nav ul li a:hover::after{
 }
 .header-text h1 span{
     color: #ff004f;
+}
+.CV{
+    font-size: 16px;
 }
 /*----------------about------------------*/
 #about{
@@ -352,7 +357,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url("background112.jpg");
+        background-image: url("background.png.jpg");
     }
     .header-text{
         margin-top: 100%;
@@ -415,4 +420,3 @@ nav .fas{
         display: block;
     }
 
-}
