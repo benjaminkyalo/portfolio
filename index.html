@@ -6,9 +6,10 @@
         <meta name="viewport" content="width=device-width, intial-scale=1.0">
         <title>Benjamin Kyalo</title>
 <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 <script src="https://kit.fontawesome.com/632c242b29.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body><header>
         <div id="header">
         <div class="container">
         <nav>
@@ -19,22 +20,28 @@
                 <li><a href="#services">services</a></li><li>
                 <li><a href="#portfolio">Portfolio</a></li>
              <li><a href="#contact">contact</a></li>
-             <i class="fa-solid fa-circle-xmark" onlick="closemenu()"></i>
+             <i class="bi bi-brightness-high-fill" id="toggleDark"></i>
+             <i class="fas fa-times" onclick="closemenu()"></i>
             </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
         </nav>
             <div class="social-icons">
-                <a href="https://wa.link/phy04r"><i class="fa-brands fa-square-whatsapp"></i></i></a>
+                <a href="https://wa.link/phy04r"><i class="fa-brands fa-whatsapp"></i></i></i></a>
+                <a href="https://github.com/benjaminkyalo"><i class="fa-brands fa-github"></i></i></a>
                 <a href="https://x.com/BenpolTm?t=oxpqwFsCT23KCIZfdEbgHQ&s=09"><i class="fa-brands fa-twitter"></i><a>
-                <a href="https://www.linkedin.com/in/benjamin-paul-5a874b267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></i></a>
+                <a href="https://www.linkedin.com/in/benjamin-paul-5a874b267?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></i></i></a>
+
             </div>
         <div class="header-text">
             <h1>Hi I'm <br><SPan>Benjamin</SPan> from Kenya</h1>
-            <p>software engineer and UX/UI designer.</p>
-<div class="CV"><a href="my-cv.docx" download class="btn btn2">Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a></div>
+            <div class="animated-text">
+                <span></span>
+               </div>
+<div class="CV"><a href="Benjamin kyalo-RESUME - Shortcut.lnk" download class="btn btn2">Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a></div>
 </div>
         </div>
         </div>
+        </header>
         <!---------------about---------------->
 
         <div id="about">
@@ -51,27 +58,27 @@
                      I'm also skilled in other front-end technologies such as TypeScript and Next.js. <br>
                     I'm passionate about creating user-friendly and visualy appealing interfaces. I have<br>
                     deep understanding of user experience design principles and I use this knowledge to <br>
-                    creat interfaces that are both fuctional enjoyable to use. i at all time ensure thet my interfaces look <br>
+                    creat interfaces that are both fuctional enjoyable to use. I at all time ensure that my interfaces look <br>
                     and fuction great to all devices. <br>
                     Highly motivted and results oriented individual with great work ethic, <br>
                     I'm confindent that I have skills experience necessary  to be a valuable asset to any team.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
                         <p class="tab-links" onclick="opentab('education')">Education</p>
                         <p class="tab-links" onclick="opentab('experience')">Experience</p>
                     </div>
-                    <div class="tab-contents active-tabs" id="Skills">
+                    <div class="tab-contents active-tab" id="Skills">
                         <ul>
-                            <li><span>UI/UX</span> <br> Designing Web/App interfaces</li>
-                            <li><span>Web development</span> <br>Web/App interfaces</li>
-                            <li><span>App development</span> <br>Building Android/ios apps</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web development</span><br>Web/App interfaces</li>
+                            <li><span>App development</span><br>Building Android/ios apps</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2021-2025</span> <br>Murang'a University</li>
-                            <li><span>Degree</span> <br>Bsc, maths & comp science</li>
+                            <li><span>Degree</span><br>Bsc, maths & comp science</li>
                             <li><span>2022-current</span> <br>developing webs</li>
                         </ul>
                     </div>
@@ -166,7 +173,7 @@
 
     </div>
      </div>
-     <a href="#" class="btn">See More</a>
+     <a href="#" class="btn">See more</a>
     </div>
     </div>
 <!---------------------contact---------------------->
@@ -189,7 +196,7 @@
                                     <a href="https://instagram.com/myahund?igshid=NzZlODBkYWE4Ng=="><i class="fa-brands fa-square-instagram"></i></a>
                                     <a href="kyalopaul120@gmail.com"><i class="fa-regular fa-envelope"></i></a>        
                                 </div>
-                                <a href="my-cv.docx" download class="btn btn2">Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a>
+                                <a href="Benjamin kyalo-RESUME - Shortcut.lnk" download class="btn btn2">Download CV <i class="fa-solid fa-cloud-arrow-down"></i></a>
                             </div>
                             <div class="contact-right"></div>
                             <form>
@@ -203,26 +210,43 @@
                         </div>
                     </div>
                     <div class="copyright">
-                     <p> Crafted with<i class="fa-solid fa-heart">by Benjamin Kyalo</i></p>
+                     <p> Crafted with <i class="fa-solid fa-heart"> by Benjamin Kyalo</i></p>
                     </div>
                    </div>
+                   <script>
+const toggle = document.getElementById('toggleDark');
+const header = document.querySelector('header');
+
+toggle.addEventListener('click', function(){
+    this.classList.toggle('bi-moon');
+if(this.classList.toggle('bi-brightness-high-fill')){
+        header.style.background = '#fff';
+        header.style.color = 'lightgreen';
+        header.style.transition = '0.7s';
+    }else{
+        header.style.background = 'lightgreen';
+        header.style.color = '#fff';
+        header.style.transition ='0.7s';
+    }
+})
+                   </script>
         <script>
         var tablinks = document.getElementsByClassName("tab-links");
-        var tabcontents = document.getElementsByClassName("tab-contents");
-            
+        var tabcontents = document.getElementsByClassName("tab-contents");  
         function opentab(tabname){
             for(tablink of tablinks){
-                tablink.classlist.remove("active-link");
+                tablink.classList.remove("active-link");
             }
             for(tabcontent of tabcontents){
-                tabcontent.classlist.remove("active-tab");
+                tabcontent.classList.remove("active-tab");
             }
-            event.currentTarget.classlist.add("active-link");
+            event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
         </script>
         <script>
-            var sidemenu = document.getElementById("sidemenu").innerHTML;
+            var sidemenu = document.getElementById("sidemenu");
+
             function openmenu(){
                 sidemenu.style.right = "0";
             }
