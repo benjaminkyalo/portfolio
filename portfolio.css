@@ -340,6 +340,11 @@ transform: scale(1.1);
     text-align: center;
 }
 
+#skills2 .tools
+{
+    margin-left: 0px;
+}
+
 #skills2 div p{
 font-size: 16px;
 text-align: center;
@@ -515,7 +520,7 @@ nav .fas{
 
     #skills2 div .tools img {
         padding: 5px;
-        height: 77px;
+        height: 70px;
         margin-top: 15px;
         margin-bottom: 15px;
         border: 0.3px solid lightgray;
@@ -546,7 +551,6 @@ nav .fas{
     .copyright{
         font-size: 14px;
     }
-}
     #msg{
         color: #61b752;
         margin-top: -40px;
